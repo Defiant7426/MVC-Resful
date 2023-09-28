@@ -43,8 +43,10 @@ end
 # populate the database if it is empty (avoid running this piece of code twice)
 ### do you still remember this cleaner and simpler hash syntax?
 if Todo.all.empty?
+  Todo.create(description: "primer mensaje")
   Todo.create(description: "prepare for discussion section")
   Todo.create(description: "release cc 3s2")
+  Todo.create(description: "Esta es una tarea")
 end
 
 # display all todos
